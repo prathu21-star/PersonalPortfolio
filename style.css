@@ -250,11 +250,11 @@ section .title {
 
 .home-content {
     display: flex;
-    align-items: center; /* Vertically align the image and text */
+    align-items: center; 
 }
 
 .text-container {
-    flex: 1; /* Take remaining space for the text content */
+    flex: 1; 
 }
 
 .text-container a {
@@ -263,9 +263,9 @@ section .title {
 }
 
 .profile-image img {
-    max-width: 650px; /* Adjust the image size as needed */
-    border-radius: 15px; /* Add border-radius for a rounded corner effect if desired */
-    margin-left: 30px; /* Add some spacing between the text and the image */
+    max-width: 650px; 
+    border-radius: 15px; 
+    margin-left: 30px; 
 }
 
 
@@ -322,7 +322,7 @@ section .title {
 
 .projects .serv-content .card {
   width: calc(33% - 20px);
-  background: rgba(255, 255, 255, 0.8); /* Set a transparent background color */
+  background: rgba(255, 255, 255, 0.8); 
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -379,7 +379,7 @@ section .title {
 
 .certificates .serv-content .card {
   width: calc(33% - 20px);
-  background: rgba(255, 255, 255, 0.8); /* Set a transparent background color */
+  background: rgba(255, 255, 255, 0.8); 
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
