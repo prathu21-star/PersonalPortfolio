@@ -1,6 +1,8 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,24 +10,25 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #e3ff30, #00ffc3, #3c72a0, #00bbff, #ff34f8);
-    background-size: 800% 800%;
-    animation: gradientAnimation 30s ease infinite;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(155deg, #94f9f9, #3ff508, #e6d70d );
+  background-size: cover;
+  animation: rainbowAnimation 30s linear infinite;
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+@keyframes rainbowAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.columnleft {
+  box-shadow: #000000;
 }
 
 
@@ -225,7 +228,7 @@ section .title {
 }
 
 .home .home-content .text-3 span {
-  color: rgb(255, 255, 255);
+  color: rgb(200, 50, 50);
   font-weight: 500;
 }
 
@@ -250,11 +253,11 @@ section .title {
 
 .home-content {
     display: flex;
-    align-items: center; 
+    align-items: center; /* Vertically align the image and text */
 }
 
 .text-container {
-    flex: 1; 
+    flex: 1; /* Take remaining space for the text content */
 }
 
 .text-container a {
@@ -263,13 +266,128 @@ section .title {
 }
 
 .profile-image img {
-    max-width: 650px; 
-    border-radius: 15px; 
-    margin-left: 30px; 
+  margin-left: 8%;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  
+
+  background: linear-gradient(135deg, rgba(255, 0, 128, 0.816), rgba(232, 248, 8, 0.86));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.18);
+  box-shadow: 0 50px 42px 0 rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0px 0px 200px 42px rgba(255, 0, 106, 1);
+  -moz-box-shadow: 0px 0px 200px 42px rgba(255, 0, 106, 1);
+  box-shadow: 0px 0px 200px 42px rgb(102, 0, 255);
 }
 
 
-/* About section styling */
+
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.untoldcoding:hover:nth-child(2) {
+  box-shadow: 10px 10px 50px rgb(15, 55, 231);
+}
+.untoldcoding {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+}
+
+.untoldcoding:hover {
+  z-index: 1111;
+  transform: perspective(2000px) rotate(-10deg);
+  -webkit-box-shadow:0px 0px 200px 73px rgba(255,46,46,0.9);
+  -moz-box-shadow: 0px 0px 200px 73px rgba(255,46,46,0.9);
+  box-shadow: 0px 0px 200px 73px rgba(255,46,46,0.9);
+}
+
+.untoldcoding .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.untoldcoding .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.untoldcoding:hover .img-container {
+  transform: rotateY(-135deg);
+}
+
+.untoldcoding .untoldcoding-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #000;
+}
+
+.untoldcoding .untoldcoding-details h2 {
+  margin: 0;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #ed363a;
+}
+
+.untoldcoding .untoldcoding-details p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  font-size: 1.1em;
+}
+.resume-button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 25%;
+  padding: 10px 20px;
+  background: #ed363a;
+  color: #fff;
+  border: 2px solid #ed363a;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.resume-button:hover {
+  background: transparent;
+  color: #ed363a;
+}
+
+
+
+
+
+
+/* About section styling 
 .about .about-content .left img {
   height: 400px;
   width: 400px;
@@ -288,7 +406,7 @@ section .title {
 }
 
 .about .about-content .right .text span {
-  color: rgb(255, 255, 255);
+  color: rgb(246, 3, 3);
 }
 
 .about .about-content .right p {
@@ -312,6 +430,8 @@ section .title {
   color: crimson;
   background: none;
 }
+*/
+
 
 /* Projects section styling */
 .projects .serv-content {
@@ -322,7 +442,7 @@ section .title {
 
 .projects .serv-content .card {
   width: calc(33% - 20px);
-  background: rgba(255, 255, 255, 0.8); 
+  background: rgba(255, 255, 255, 0.8); /* Set a transparent background color */
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -379,7 +499,7 @@ section .title {
 
 .certificates .serv-content .card {
   width: calc(33% - 20px);
-  background: rgba(255, 255, 255, 0.8); 
+  background: rgba(255, 255, 255, 0.8); /* Set a transparent background color */
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -591,7 +711,17 @@ section .title {
 }
 
 .contact .contact-content .info .sub-title {
-  color: #000000;
+  color: #000000; /* Default color for all screen sizes */
+
+  /* Media query for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    color: #FF0000; /* Change color for screens with a width of 768px or less */
+  }
+
+  /* Media query for screens with a maximum width of 480px */
+  @media (max-width: 480px) {
+    color: #000000; /* Change color for screens with a width of 480px or less */
+  }
 }
 
 .contact .right form .fields {
@@ -685,6 +815,7 @@ footer span a:hover {
   .about .about-content .left img {
     height: 350px;
     width: 350px;
+    
   }
 }
 
