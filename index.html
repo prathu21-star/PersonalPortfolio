@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="D:\Coding\Responsive Portfolio Website\images\favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images\favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -19,6 +20,32 @@
 </head>
 
 <body>
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <!-- Add more circles as needed -->
+      </div>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -49,10 +76,13 @@
                     <div class="text-3">And U Can Call Me <span class="typing"></span></div>
                     <a href="https://www.linkedin.com/in/prathmesh-chavan-2001pc7671/">Hire me</a>
                 </div>
+
+                
     
                 <!-- Add the large image here on the right side -->
                 <div class="profile-image">
-                    <img src="images\Untitled design.png" alt="">
+                    <img src="images/Home_Page4.png" alt="">
+                    
                 </div>
             </div>
         </div>
@@ -63,22 +93,33 @@
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
-                <div class="column left">
-                    <img src="images/profile-1.jpeg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Prathmesh and I'm a <span class="typing-2"></span></div>
-                    <ul style="list-style-type: disc;">
-                        <li><b>Highly motivated and driven individual actively pursuing challenging employment opportunities.</b></li>
-                        <li><b>Demonstrates exceptional work ethic and a diverse range of highly valuable Skills.</b></li>
-                        <li><b>Committed to maximizing these kills within a professional setting to drive positive results.</b></li>
-                        <li><b>Strives for excellence and is dedicated to achieving exceptional outcomes.</b></li>
-                        <li><b>Aims to significantly contribute to organizational success through the application of acquired abilities.</b></li>
-                      </ul>
-                      
-                   
-                    <a href="https://drive.google.com/file/d/1lPuuDSX7UO5BYoVgKmhtBlK5wUbicVN1/view?usp=sharing">Resume</a>
-                </div>
+                <div class="container">
+                    <div class="untoldcoding">
+                      <div class="img-container">
+                        <img src="./images/profile-1.jpeg" alt="" />
+                      </div>
+                      <div class="untoldcoding-details">
+                        <h2>I'm Prathmesh and I'm a <span class="typing-2"></span></h2>
+                        <p>
+                            <li><b>Motivated individual seeking challenging opportunities.</b></li>
+                            <li><b>work ethic and diverse skills.</b></li> 
+                            <li><b>Committed to driving positive results.</b></li>
+                            <li><b>Strives for excellence and dedication.</b></li>
+                            <li><b>Aims to contribute to organizational success.</b></li>
+                            <div class="resume-button">
+                                <a href="https://drive.google.com/file/d/1lPuuDSX7UO5BYoVgKmhtBlK5wUbicVN1/view?usp=sharing">Resume</a>
+                              </div>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    </div>
+                  </div>
+                
+                  
+                  
+                
+                
             </div>
         </div>
     </section>
@@ -462,7 +503,24 @@
                             </div>
                        
                         
-                       
+                        <!-- <div class="bars">
+                            <div class="info">
+                                <span>Node.js</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="line nodejs">
+
+                            </div> 
+                        
+                        
+                         <div class="bars">
+                            <div class="info">
+                                <span>Express.js</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="line expressjs">
+
+                            </div> -->
                         
                         
                         <div class="bars">
@@ -475,7 +533,15 @@
                             </div>
                         
                         
-                        
+                        <!--  <div class="bars">
+                            <div class="info">
+                                <span>MongoDB</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="line mongodb">
+
+                            </div> -->
+
                             <div class="bars">
                                 <div class="info">
                                     <span>PHP</span>
@@ -510,22 +576,23 @@
                                 <div class="sub-title"><b>Prathmesh Chavan</b></div>
                             </div>
                         </div>
-                        
+                    
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title"><b>Kalyan,Thane, Maharashtra</b></div>
+                                <div class="sub-title"><b>Kalyan, Thane, Maharashtra</b></div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title"><b>prathmeshchavan8652@gmail.com</b></div>
+                                <div class="sub-title email"><a href="mailto:prathmeshchavan8652@gmail.com">prathmeshchavan8652@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="column right">
                     <div class="text">Message Me & Follow Me On</div>
@@ -533,17 +600,17 @@
                         <div class="fields">
                             <div class="field">
                                 <a href="https://www.linkedin.com/in/prathmesh-chavan-71519a267/">
-                                    <img src="images\linkedin.png" alt="LinkedIn Icon" width="48" height="48">
+                                    <img src="images/linkedin.png" alt="LinkedIn Icon" width="48" height="48">
                                 </a>
                             </div>
                             <div class="field">
                                 <a href="https://www.instagram.com/prathmesh___chavan/">
-                                    <img src="images\instagram.png" alt="Instagram Icon" width="48" height="48">
+                                    <img src="images/instagram.png" alt="Instagram Icon" width="48" height="48">
                                 </a>
                             </div>
                             <div class="field">
                                 <a href="https://github.com/prathu21-star">
-                                    <img src="images\github.png" alt="GitHub Icon" width="48" height="48">
+                                    <img src="images/github.png" alt="GitHub Icon" width="48" height="48">
                                 </a>
                             </div>
                         </div>
@@ -566,6 +633,7 @@
 
     <script src="script.js"></script>
     <script src="Flash.js"></script>
+    <script src="Cursor.js"></script>
     
    
     
