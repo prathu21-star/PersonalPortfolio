@@ -13,8 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(155deg, #94f9f9, #3ff508, #e6d70d );
-  background-size: cover;
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
   animation: rainbowAnimation 30s linear infinite;
 }
 
@@ -58,6 +57,7 @@ section {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
+  
 }
 
 .about,
@@ -66,7 +66,20 @@ section {
 .contact,
 footer {
   font-family: 'Poppins', sans-serif;
+  
 }
+
+.about {
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+}
+.projects {
+  background: linear-gradient(111.1deg, rgb(0, 40, 70) -4.8%, rgb(255, 115, 115) 82.7%, rgb(255, 175, 123) 97.2%);
+}
+.certificates {
+  background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);
+}
+
+
 
 .about .about-content,
 .projects .serv-content,
@@ -76,6 +89,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 section .title {
@@ -86,7 +100,113 @@ section .title {
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: 'Ubuntu', sans-serif;
+  
 }
+.certificates .title {
+  background-image: linear-gradient(122.3deg, rgb(111, 71, 133) 14.6%, rgb(232, 129, 166) 29.6%, rgb(237, 237, 183) 42.1%, rgb(244, 166, 215) 56.7%, rgb(154, 219, 232) 68.7%, rgb(238, 226, 159) 84.8%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* If you want to make the text bold */
+  animation: glowing 2s infinite; /* Add a glow animation */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 255, 234, 0.945); /* Start with a subtle glow */
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Increase the glow intensity */
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(0, 247, 255); /* Fade the glow */
+  }
+}
+
+.projects .title {
+  background-image: linear-gradient(122.3deg, rgb(111, 71, 133) 14.6%, rgb(232, 129, 166) 29.6%, rgb(237, 237, 183) 42.1%, rgb(244, 166, 215) 56.7%, rgb(154, 219, 232) 68.7%, rgb(238, 226, 159) 84.8%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* If you want to make the text bold */
+  animation: glowing 2s infinite; /* Add a glow animation */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(217, 255, 0, 0.945); /* Start with a subtle glow */
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(190, 224, 0, 0.929); /* Increase the glow intensity */
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(255, 247, 0); /* Fade the glow */
+  }
+}
+
+.about .title {
+  background-image: linear-gradient(122.3deg, rgb(111, 71, 133) 14.6%, rgb(232, 129, 166) 29.6%, rgb(237, 237, 183) 42.1%, rgb(244, 166, 215) 56.7%, rgb(154, 219, 232) 68.7%, rgb(238, 226, 159) 84.8%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* If you want to make the text bold */
+  animation: glowing 2s infinite; /* Add a glow animation */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(47, 0, 255, 0.945); /* Start with a subtle glow */
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 15, 224, 0.929); /* Increase the glow intensity */
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(0, 162, 255); /* Fade the glow */
+  }
+}
+
+.Skills .title {
+  background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* If you want to make the text bold */
+  animation: glowing 2s infinite; /* Add a glow animation */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(47, 0, 255, 0.945); /* Start with a subtle glow */
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 15, 224, 0.929); /* Increase the glow intensity */
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(0, 162, 255); /* Fade the glow */
+  }
+}
+
+.contact .title {
+  background-image: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* If you want to make the text bold */
+  animation: glowing 2s infinite; /* Add a glow animation */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 0, 221, 0.945); /* Start with a subtle glow */
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(234, 0, 255, 0.929); /* Increase the glow intensity */
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(255, 0, 166); /* Fade the glow */
+  }
+}
+
 
 /* Navbar styling */
 .navbar {
@@ -101,7 +221,7 @@ section .title {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: crimson;
+  background: linear-gradient(74.3deg, rgb(68, 17, 28) 17.4%, rgb(95, 24, 40) 34.7%, rgb(122, 31, 51) 51.8%, rgb(149, 38, 62) 67.4%, rgb(163, 41, 68) 89.6%);
 }
 
 .navbar .max-width {
@@ -111,7 +231,7 @@ section .title {
 }
 
 .navbar .logo a {
-  color: #000000;
+  color: #ffffff;
   font-size: 35px;
   font-weight: 600;
 }
@@ -152,6 +272,7 @@ section .title {
 .navbar.sticky .menu li a:hover {
   color: #fff;
 }
+
 
 /* Menu button styling */
 .menu-btn {
@@ -196,7 +317,7 @@ section .title {
 .home {
   display: flex;
   height: 100vh;
-  color: #000000;
+  background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
@@ -214,21 +335,38 @@ section .title {
 
 .home .home-content .text-1 {
   font-size: 27px;
+  background-image:    radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(255, 255, 255) 24.5%, rgb(237, 227, 227) 66%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; 
+  
 }
 
 .home .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
+  background-image:    radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(204, 255, 0) 24.5%, rgb(120, 255, 1) 66%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
+  background-image:  radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%,  rgb(204, 255, 0) 24.5%, rgb(120, 255, 1) 66%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .home .home-content .text-3 span {
-  color: rgb(200, 50, 50);
+  background-image: linear-gradient(109.6deg, rgb(240, 228, 122) 11.2%, rgb(253, 145, 212) 54.5%, rgb(176, 222, 234) 99.6%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: 500;
 }
 
@@ -283,6 +421,8 @@ section .title {
   -moz-box-shadow: 0px 0px 200px 42px rgba(255, 0, 106, 1);
   box-shadow: 0px 0px 200px 42px rgb(102, 0, 255);
 }
+
+
 
 
 
@@ -348,6 +488,15 @@ section .title {
   box-sizing: border-box;
   padding: 20px;
   color: #000;
+  background-color:hsla(0,100%,50%,1);
+background-image:
+radial-gradient(at 12% 0%, hsla(99,76%,65%,1) 0px, transparent 50%),
+radial-gradient(at 100% 0%, hsla(260,76%,65%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(66,76%,65%,1) 0px, transparent 50%),
+radial-gradient(at 92% 16%, hsla(51,76%,65%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(93,76%,65%,1) 0px, transparent 50%),
+radial-gradient(at 99% 98%, hsla(313,76%,65%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(54,76%,65%,1) 0px, transparent 50%);
 }
 
 .untoldcoding .untoldcoding-details h2 {
@@ -355,7 +504,7 @@ section .title {
   padding: 0.5em 0;
   text-transform: uppercase;
   font-size: 1em;
-  color: #ed363a;
+  color: #00552d;
 }
 
 .untoldcoding .untoldcoding-details p {
@@ -369,9 +518,9 @@ section .title {
   margin-top: 10px;
   margin-left: 25%;
   padding: 10px 20px;
-  background: #ed363a;
-  color: #fff;
-  border: 2px solid #ed363a;
+  background: #51cbcf;
+  color: #101010;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   text-decoration: none;
   transition: all 0.3s;
@@ -438,11 +587,25 @@ section .title {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
 .projects .serv-content .card {
+  background-color:hsla(0,100%,50%,1);
+background-image:
+radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
   width: calc(33% - 20px);
-  background: rgba(255, 255, 255, 0.8); /* Set a transparent background color */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -462,7 +625,15 @@ section .title {
 }
 
 .projects .serv-content .card:hover {
-  background: crimson;
+  background-color:hsla(0,100%,50%,1);
+background-image:
+radial-gradient(at 44% 19%, hsla(202,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 100% 0%, hsla(3,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(169,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 92% 16%, hsla(154,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(196,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 86% 82%, hsla(56,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(157,90%,51%,1) 0px, transparent 50%);
 }
 
 .projects .serv-content .card .box {
@@ -498,8 +669,17 @@ section .title {
 }
 
 .certificates .serv-content .card {
+  background-color:hsla(0,100%,50%,1);
+background-image:
+radial-gradient(at 40% 20%, hsla(25,100%,74%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(186,100%,56%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(352,100%,93%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(337,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(19,100%,77%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(239,100%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(340,100%,76%,1) 0px, transparent 50%);
   width: calc(33% - 20px);
-  background: rgba(255, 255, 255, 0.8); /* Set a transparent background color */
+  background-color: rgba(0, 0, 0, 0.75);
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -519,7 +699,15 @@ section .title {
 }
 
 .certificates .serv-content .card:hover {
-  background: crimson;
+  background-color:hsla(0,100%,50%,1);
+background-image:
+radial-gradient(at 44% 19%, hsla(202,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 100% 0%, hsla(3,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(169,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 92% 16%, hsla(154,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(196,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 86% 82%, hsla(56,90%,51%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(157,90%,51%,1) 0px, transparent 50%);
 }
 
 .certificates .serv-content .card .box {
@@ -548,6 +736,10 @@ section .title {
 }
 
 /* Skills section styling */
+.Skills {
+  background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+}
+
 .Skills .title::after {
   content: "";
 }
@@ -665,6 +857,10 @@ section .title {
 }
 
 /* Contact section styling */
+.contact {
+  background: linear-gradient(109.6deg, rgb(240, 228, 122) 11.2%, rgb(253, 145, 212) 54.5%, rgb(176, 222, 234) 99.6%);
+}
+
 .contact .title::after {
   content: "";
   color: crimson;
