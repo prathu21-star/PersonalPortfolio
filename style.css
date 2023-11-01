@@ -531,6 +531,24 @@ radial-gradient(at 0% 0%, hsla(54,76%,65%,1) 0px, transparent 50%);
   color: #ed363a;
 }
 
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5%;
+  padding: 10px 20px;
+  background: transparent;
+  color: #101010;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: lightblue;
+  color: #ed363a;
+}
+
 
 
 
@@ -666,6 +684,7 @@ radial-gradient(at 0% 0%, hsla(157,90%,51%,1) 0px, transparent 50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
 .certificates .serv-content .card {
@@ -708,6 +727,9 @@ radial-gradient(at 92% 16%, hsla(154,90%,51%,1) 0px, transparent 50%),
 radial-gradient(at 0% 100%, hsla(196,90%,51%,1) 0px, transparent 50%),
 radial-gradient(at 86% 82%, hsla(56,90%,51%,1) 0px, transparent 50%),
 radial-gradient(at 0% 0%, hsla(157,90%,51%,1) 0px, transparent 50%);
+-webkit-box-shadow:0px 0px 300px 0px rgba(252,197,0,1);
+-moz-box-shadow: 0px 0px 300px 0px rgba(252,197,0,1);
+box-shadow: 0px 0px 300px 0px rgba(252,197,0,1);
 }
 
 .certificates .serv-content .card .box {
@@ -732,7 +754,7 @@ radial-gradient(at 0% 0%, hsla(157,90%,51%,1) 0px, transparent 50%);
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
-  color: #ff0000;
+  color: #ff0101;
 }
 
 /* Skills section styling */
