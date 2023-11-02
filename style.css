@@ -70,6 +70,7 @@ footer {
 }
 
 .about {
+  height: 95rem;
   background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
 }
 .projects {
@@ -440,9 +441,10 @@ section .title {
 }
 .untoldcoding {
   position: relative;
+  margin-right: 20px;
   margin: 20px 0;
   width: 300px;
-  height: 400px;
+  height: 405px;
   background: #fff;
   transform-style: preserve-3d;
   transform: perspective(2000px);
@@ -485,18 +487,14 @@ section .title {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
   padding: 20px;
   color: #000;
   background-color:hsla(0,100%,50%,1);
 background-image:
-radial-gradient(at 12% 0%, hsla(99,76%,65%,1) 0px, transparent 50%),
-radial-gradient(at 100% 0%, hsla(260,76%,65%,1) 0px, transparent 50%),
-radial-gradient(at 0% 50%, hsla(66,76%,65%,1) 0px, transparent 50%),
-radial-gradient(at 92% 16%, hsla(51,76%,65%,1) 0px, transparent 50%),
-radial-gradient(at 0% 100%, hsla(93,76%,65%,1) 0px, transparent 50%),
-radial-gradient(at 99% 98%, hsla(313,76%,65%,1) 0px, transparent 50%),
-radial-gradient(at 0% 0%, hsla(54,76%,65%,1) 0px, transparent 50%);
+linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
 }
 
 .untoldcoding .untoldcoding-details h2 {
@@ -549,6 +547,128 @@ radial-gradient(at 0% 0%, hsla(54,76%,65%,1) 0px, transparent 50%);
   color: #ed363a;
 }
 
+
+/* 2nd container  */
+
+.container2 {
+
+  margin: 10rem;
+  
+}
+
+.coding:hover:nth-child(2) {
+  box-shadow: 10px 10px 50px rgb(15, 55, 231);
+}
+.coding {
+  position: relative;
+  margin-left: 20px;
+  margin: 20px ;
+  width: 350px;
+  height: 500px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+}
+
+.coding:hover {
+  z-index: 1111;
+  transform: perspective(2000px) rotate(-10deg);
+  -webkit-box-shadow:0px 0px 200px 73px rgba(255,46,46,0.9);
+  -moz-box-shadow: 0px 0px 200px 73px rgba(255,46,46,0.9);
+  box-shadow: 0px 0px 200px 73px rgba(255,46,46,0.9);
+}
+
+.coding .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.coding .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.coding:hover .img-container {
+  transform: rotateY(-135deg);
+}
+
+.coding .coding-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #000;
+  background-color:hsla(0,100%,50%,1);
+background-image:
+linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+
+}
+
+.coding .untoldcoding-details h2 {
+  margin: 0;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #00552d;
+}
+
+.coding .untoldcoding-details p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+}
+.resume-button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 25%;
+  padding: 10px 20px;
+  background: #51cbcf;
+  color: #101010;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.resume-button:hover {
+  background: transparent;
+  color: #ed363a;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5%;
+  padding: 10px 20px;
+  background: transparent;
+  color: #101010;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: lightblue;
+  color: #ed363a;
+}
 
 
 
@@ -706,6 +826,7 @@ radial-gradient(at 0% 0%, hsla(340,100%,76%,1) 0px, transparent 50%);
   transition: all 0.3s ease;
   margin-bottom: 20px;
 }
+
 
 .certificates .serv-content .card:not(:nth-child(3n)) {
   margin-right: 20px;
